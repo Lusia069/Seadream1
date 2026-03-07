@@ -1,0 +1,65 @@
+h1::before{
+    content:"💧"
+}
+
+h1::after{
+    content:"💧"
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: Impact;
+    font-size: 100px;
+    width: 1500px;
+    height: 150px;
+    background-color: aquamarine;
+    background-position: center;
+    border-radius: 100px;
+    border:10px solid darkblue;
+    box-sizing:border-box;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Courier;
+}
+
+legend{
+    text-align:center;
+    font:bold 20px;
+}
+
+img{
+    border: solid black 3px;
+    border-radius: 50px;
+}
+
+fieldset{
+    border: solid black 3px;
+    background-color: aqua;
+    border-radius: 50px;
+}
+
+input{
+    border: solid black 3px;
+}
+
+input[type="submit"]{
+    background-color: lightgrey;
+}
+
+select{
+    border: solid black 3px;
+}
+
+#nav{
+    text-align: center;
+    list-style-position: inside;
+}
+
+li:hover{
+    font-weight: bold;
+}
