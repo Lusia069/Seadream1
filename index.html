@@ -7,6 +7,60 @@
         <header>
         <h1> Seadream</h1>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#Inicio"> Inicio</a></li>
+            <li> <a href= "#Registro">Registro</a></li>
+            <li><a href="#Acercade"> Acerca de</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Inicio">
+            <h2>Inicio</h2>
+            <form action=" http://labtelema.ujaen.es/form.php" method="POST">
+                <fieldset>
+                    <legend>Datos de autenticación</legend>
+                <label>Nombre de usuario:</label><br>
+                <input type="text" name="user" placeholder="Escribe tu usuario" requiered minlength="4" maxlength="16"><br><br>
+                <label>Clave de usuario:</label><br>
+                <input type="password" name="password" placeholder="Escribe tu clave" requiered minlength="4" mexlength="16"><br><br>
+                </fieldset><br>
+                <input type="submit" value="Entrar">
+            </form>
+
+        </section>
+        <section id="Registro">
+            <h2>Registro</h2>
+            <form action="http://labtelema.ujaen.es/form.php" method="POST">
+            <fieldset>
+                <legend>Datos de registro de usuario</legend>
+                <label>Nombre de usuario:</label><br>
+                <input type="text" name="user" placeholder="Escribe tu usuario" requiered minlength="4" maxlength="16"><br><br>
+                <label>Correo electrónico:</label><br>
+                <input type="email" name="email" placeholder="Escribe tu correo" requiered><br><br>
+                <label>Nombre:</label><br>
+                <input type="text" name="name" placeholder="Escribe tu nombre" requiered maxlength="32"><br><br>
+                <label>Apellidos:</label><br>
+                <input type="text" name="surname" placeholder="Escribe tus apellidos" maxlength="32"><br><br>
+                <label>Clave de usuario:</label><br>
+                <input type="password" name="password" placeholder="Escribe tu clave"minlength="4" maxlength="16" requiered><br><br>
+                <label>Comprobación de clave:</label><br>
+                <input type="password" name="password-check" placeholder="Repite tu clave" minlength="4" maxlength="16" requiered><br><br>
+            </fieldset><br>
+            <input type="submit" value="Registrar">
+            </form>
+
+        </section>
+        <section id=" Acercade">
+            <h2>Acerca de</h2>
+
+        </section>
+       
+
+    </main>
+    <footer>
+
+    </footer>
 
     </body>
 </html>
