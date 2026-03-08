@@ -1,3 +1,7 @@
+body{
+    background-image: url(Fondo.jpg);
+}
+
 h1::before{
     content:"💧"
 }
@@ -25,11 +29,12 @@ h2{
     font-weight: bold;
     font-size: 30px;
     font-family: Courier;
-}
-
-legend{
-    text-align:center;
-    font:bold 20px;
+    width:400px;
+    height:30px;
+    background-color: bisque;
+    background-position: center;
+    border:3px solid black;
+    border-radius: 20px;
 }
 
 img{
@@ -37,10 +42,14 @@ img{
     border-radius: 50px;
 }
 
+label{
+    font-weight: bold;
+}
+
 fieldset{
     border: solid black 3px;
-    background-color: aqua;
-    border-radius: 50px;
+    background-color: cornsilk;
+    border-radius: 20px;
 }
 
 input{
