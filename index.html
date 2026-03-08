@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header1">
         <h1>Seadream</h1>
     </header>
 
@@ -23,8 +23,8 @@
             </ul>
         </nav>
     </fieldset>
-    <main>
-        <section id="Inicio de sesión">
+    <main id="main1">
+        <section id="Inicio">
             <h2>Inicio</h2>
             <form action=" http://labtelema.ujaen.es/form.php" method="POST">
                 <fieldset id="InicioFormulario">
@@ -35,15 +35,18 @@
                     <input type="password" id="contraseña" name="password" placeholder="Escribe tu clave" required
                         minlength="4" maxlength="16">
                     <input type="submit" value="Entrar">
-                    <aside>
-                        <img src="Iniciar_Sesion.avif" alt="Iniciar Sesión" height="200px" width="200px">
+                    <aside id="aside1">
+                        <img src="Iniciar_Sesion.avif" alt="Iniciar Sesión" height="150px" width="150px">
+                        <p>
+                            <strong> En esta sección se permite al usuario facilitar su nombre de usuario y su clave para poder acceder a su respectiva cuenta. Esto facilita distinguir a cada voluntario para que participen en las actividades y excursiones.</strong>
+                        </p>
                     </aside>
                 </fieldset>
             </form>
 
         </section>
         <section id="Registro">
-            <h2>Registro</h2>
+            <h2>Registro de usuario</h2>
             <form action="http://labtelema.ujaen.es/form.php" method="POST">
                 <fieldset id="RegistroFormulario">
                     <label for="Nombre_Registro">Nombre de usuario: </label>
@@ -118,8 +121,11 @@
                         <option value="Zaragoza">Zaragoza</option>
                     </select>
                     <input type="submit" value="Registrar">
-                    <aside>
+                    <aside id="aside2">
                         <img src="Registro.jpg" alt="Registro" height="150px" width="150px">
+                        <p>
+                            <strong> En esta sección se permite llevar a cabo la creación de cuenta para los usuarios, de manera que puedan tener su lugar personal y manera de ser identificados en nuestra página. Este proceso es único y a partir del registro solo se deberá realizar el inicio de sesión.</strong>
+                        </p>
                     </aside>
                 </fieldset>
             </form>
@@ -130,8 +136,12 @@
 
             <fieldset>
                 <p><strong>Proyecto:</strong> Seadream</p>
-                <p><strong>¿Quiénes somos?:</strong> ¡Somos el Equipo Alfa!, una asociación comprometida con el cuidado de las costas y el
-                    aprendizaje de las formas de vida marina. Nuestro objetivo es concienciar a las personas de la importancia del mantenimiento del entorno costero y transmitir la belleza de todos los elementos que lo componen. Entre nuestro servicios se encuentran las actividades de limpieza y cuidado de costas y las excursiones educativas ¿A qué estás esperando? ¡Salta al agua y únete a
+                <p><strong>¿Quiénes somos?:</strong> ¡Somos el Equipo Alfa!, una asociación comprometida con el cuidado
+                    de las costas y el
+                    aprendizaje de las formas de vida marina. Nuestro objetivo es concienciar a las personas de la
+                    importancia del mantenimiento del entorno costero y transmitir la belleza de todos los elementos que
+                    lo componen. Entre nuestro servicios se encuentran las actividades de limpieza y cuidado de costas y
+                    las excursiones educativas ¿A qué estás esperando? ¡Salta al agua y únete a
                     nosotros!</p>
                 <p><strong>Integrantes:</strong> Ismael Arroyo Arroyo, Lucía Almudena López Villar, Francisco Jesús
                     Ortega Alcántara</p>
@@ -140,11 +150,12 @@
                 <p><strong>Curso:</strong> 2025-2026</p>
 
 
-                <aside>
+                <aside id="aside3">
                     <img id="png1" src="equipo.png" alt="Icono del equipo">
                     <p>
-                        <strong>Esta sección permite conocer más sobre los objetivos y aspiraciones de los desarrolladores y detalles
-                            sobre ellos mismos. Además recopila todos los datos necesarios para identificarlos.</strong>
+                        <strong>Esta sección permite conocer más sobre los objetivos y aspiraciones de los
+                            desarrolladores y detalles
+                            sobre ellos mismos. Se añaden datos universitarios y personales necesarios para identificar a cada miembro del equipo.</strong>
                     </p>
                 </aside>
             </fieldset>
@@ -152,7 +163,7 @@
 
 
     </main>
-    <footer>
+    <footer id="footer1">
         <p><strong>Equipo:</strong> Equipo Alfa</p>
         <p>Servicios y aplicaciones telemáticas</p>
         <p>Grado en Ingeniería de Tecnologías de Telecomunicación</p>
