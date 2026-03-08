@@ -27,14 +27,14 @@
         <section id="Inicio de sesión">
             <h2>Inicio</h2>
             <form action=" http://labtelema.ujaen.es/form.php" method="POST">
-                <fieldset>
+                <fieldset id="InicioFormulario">
                     <label for="nombre">Nombre de usuario: </label>
                     <input type="text" id="nombre" name="user" placeholder="Escribe tu usuario" required minlength="4"
-                        maxlength="16"><br><br>
+                        maxlength="16">
                     <label for="contraseña">Clave de usuario: </label>
-                    <input type="password" id="contraseña" name="password" placeholder="Escribe tu clave" requiered
-                        minlength="4" maxlength="16"><br><br>
-                    <input type="submit" value="Entrar"><br><br>
+                    <input type="password" id="contraseña" name="password" placeholder="Escribe tu clave" required
+                        minlength="4" maxlength="16">
+                    <input type="submit" value="Entrar">
                     <aside>
                         <img src="Iniciar_Sesion.avif" alt="Iniciar Sesión" height="200px" width="200px">
                     </aside>
@@ -45,24 +45,24 @@
         <section id="Registro">
             <h2>Registro</h2>
             <form action="http://labtelema.ujaen.es/form.php" method="POST">
-                <fieldset>
+                <fieldset id="RegistroFormulario">
                     <label for="Nombre_Registro">Nombre de usuario: </label>
-                    <input type="text" id="Nombre_Registro" name="user" placeholder="Escribe tu usuario" requiered
-                        minlength="4" maxlength="16"><br><br>
+                    <input type="text" id="Nombre_Registro" name="user" placeholder="Escribe tu usuario" required
+                        minlength="4" maxlength="16">
                     <label for="Correo">Correo electrónico: </label>
-                    <input type="email" id="Correo" name="email" placeholder="Escribe tu correo" requiered><br><br>
+                    <input type="email" id="Correo" name="email" placeholder="Escribe tu correo" required>
                     <label for="Nombre_usuario">Nombre: </label>
-                    <input type="text" id="Nombre_usuario" name="name" placeholder="Escribe tu nombre" requiered
-                        maxlength="32"><br><br>
+                    <input type="text" id="Nombre_usuario" name="name" placeholder="Escribe tu nombre" required
+                        maxlength="32">
                     <label for="Apellidos_usuario">Apellidos: </label>
                     <input type="text" id="Apellidos_usuario" name="surname" placeholder="Escribe tus apellidos"
-                        maxlength="32"><br><br>
+                        maxlength="32">
                     <label for="Contraseña_usuario">Clave de usuario: </label>
                     <input type="password" id="Contraseña_usuario" name="password" placeholder="Escribe tu clave"
-                        minlength="4" maxlength="16" requiered><br><br>
+                        minlength="4" maxlength="16" required>
                     <label for="Contraseña_verificada">Comprobación de clave: </label>
                     <input type="password" id="Contraseña_verificada" name="password-check"
-                        placeholder="Repite tu clave" minlength="4" maxlength="16" requiered><br><br><br>
+                        placeholder="Repite tu clave" minlength="4" maxlength="16" required>
                     <label for="Provincia">Provincia: </label>
                     <select id="Provincia" name="Provincia" placeholder="Elige una de las provincias de España"
                         required>
@@ -116,23 +116,23 @@
                         <option value="Vizcaya">Vizcaya</option>
                         <option value="Zamora">Zamora</option>
                         <option value="Zaragoza">Zaragoza</option>
-                    </select><br><br>
-                    <input type="submit" value="Registrar"><br><br>
+                    </select>
+                    <input type="submit" value="Registrar">
                     <aside>
-                        <img src="Registro.jpg" alt="Registro" height="200px" width="200px">
+                        <img src="Registro.jpg" alt="Registro" height="150px" width="150px">
                     </aside>
                 </fieldset>
             </form>
 
         </section>
         <section id="Acercade">
-            <h2>Acerca de</h2>
+            <h2>Acerca de...</h2>
 
             <fieldset>
                 <p><strong>Proyecto:</strong> Seadream</p>
-                <p><strong>¿Quiénes somos?:</strong> Somos una asociación comprometida con el cuidado de las costas y el
-                    aprendizaje de las formas de vida marina. ¿A qué estás esperando? ¡Salta al agua y únete a
-                    notosotros!</p>
+                <p><strong>¿Quiénes somos?:</strong> ¡Somos el Equipo Alfa!, una asociación comprometida con el cuidado de las costas y el
+                    aprendizaje de las formas de vida marina. Nuestro objetivo es concienciar a las personas de la importancia del mantenimiento del entorno costero y transmitir la belleza de todos los elementos que lo componen. Entre nuestro servicios se encuentran las actividades de limpieza y cuidado de costas y las excursiones educativas ¿A qué estás esperando? ¡Salta al agua y únete a
+                    nosotros!</p>
                 <p><strong>Integrantes:</strong> Ismael Arroyo Arroyo, Lucía Almudena López Villar, Francisco Jesús
                     Ortega Alcántara</p>
                 <p><strong>Asignatura:</strong> Servicios y Aplicaciones Telemáticas</p>
@@ -141,10 +141,10 @@
 
 
                 <aside>
-                    <img id="png" src="equipo.png" alt="Icono del equipo" width="150px">
+                    <img id="png1" src="equipo.png" alt="Icono del equipo">
                     <p>
-                        <strong>Esta sección permite conocer más sobre los objetivos de los desarrolladores y detalles
-                            sobre ellos mismos.</strong>
+                        <strong>Esta sección permite conocer más sobre los objetivos y aspiraciones de los desarrolladores y detalles
+                            sobre ellos mismos. Además recopila todos los datos necesarios para identificarlos.</strong>
                     </p>
                 </aside>
             </fieldset>
@@ -160,4 +160,5 @@
     </footer>
 
 </body>
+
 </html>

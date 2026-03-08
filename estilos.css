@@ -1,0 +1,102 @@
+body{
+    background-image: url(Fondo.jpg);
+}
+
+h1::before{
+    content:"💧"
+}
+
+h1::after{
+    content:"💧"
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: Impact;
+    font-size: 100px;
+    width: auto;
+    height: auto;
+    background-color: aquamarine;
+    background-position: center;
+    border-radius: 100px;
+    border:10px solid #2078d6;
+    box-sizing:border-box;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Courier;
+    width:400px;
+    height:30px;
+    background-color: bisque;
+    background-position: center;
+    border:3px solid rgb(70, 67, 67);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+label{
+    font-weight: bold;
+}
+
+fieldset{
+    border: solid rgb(70, 67, 67) 3px;
+    background-color: cornsilk;
+    border-radius: 20px;
+}
+
+footer{
+    border: solid rgb(51, 50, 50) 3px;
+    background-color: rgb(216, 236, 198);
+    border-radius: 20px;
+    padding: 20px
+}
+
+#nav{
+    text-align: center;
+    list-style-position: inside;
+}
+
+li:hover{
+    font-weight: bold;
+}
+
+/*Diseño para las imágenes*/
+
+img{
+    border: solid rgb(70, 67, 67) 3px;
+    border-radius: 50px;
+}
+
+#png1{
+    border: none;
+    width: 150px;
+}
+
+/*Diseño para los formularios*/
+
+#RegistroFormulario, #InicioFormulario{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+input, select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #c9c7c7;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #2078d6;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+}
