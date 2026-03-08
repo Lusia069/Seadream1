@@ -15,8 +15,8 @@ h1{
     font-weight: bold;
     font-family: Impact;
     font-size: 100px;
-    width: 1500px;
-    height: 150px;
+    width: auto;
+    height: auto;
     background-color: aquamarine;
     background-position: center;
     border-radius: 100px;
@@ -42,6 +42,10 @@ img{
     border-radius: 50px;
 }
 
+#png{
+    border: none;
+}
+
 label{
     font-weight: bold;
 }
@@ -49,6 +53,12 @@ label{
 fieldset{
     border: solid black 3px;
     background-color: cornsilk;
+    border-radius: 20px;
+}
+
+footer{
+    border: solid black 3px;
+    background-color: rgb(216, 236, 198);
     border-radius: 20px;
 }
 
