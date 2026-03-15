@@ -36,6 +36,9 @@ h2{
     border:3px solid rgb(70, 67, 67);
     border-radius: 20px;
     padding: 15px;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 label{
@@ -46,6 +49,16 @@ fieldset{
     border: solid rgb(70, 67, 67) 3px;
     background-color: cornsilk;
     border-radius: 20px;
+}
+
+ul{
+    display:flex;
+    list-style: none;
+}
+
+ul li{
+    flex:1;
+    text-align: center;
 }
 
 footer{
