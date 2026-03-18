@@ -24,8 +24,10 @@
         </nav>
     </fieldset>
     <main id="main1">
+        
+        <h2>Inicio</h2>
+        <div id="div1">
         <section id="Inicio">
-            <h2>Inicio</h2>
             <form action=" http://labtelema.ujaen.es/form.php" method="POST">
                 <fieldset id="InicioFormulario">
                     <label for="nombre">Nombre de usuario: </label>
@@ -35,18 +37,21 @@
                     <input type="password" id="contraseña" name="password" placeholder="Escribe tu clave" required
                         minlength="4" maxlength="16">
                     <input type="submit" value="Entrar">
-                    <aside id="aside1">
-                        <img src="Iniciar_Sesion.avif" alt="Iniciar Sesión" height="150px" width="150px">
-                        <p>
-                            <strong> En esta sección se permite al usuario facilitar su nombre de usuario y su clave para poder acceder a su respectiva cuenta. Esto facilita distinguir a cada voluntario para que participen en las actividades y excursiones.</strong>
-                        </p>
-                    </aside>
                 </fieldset>
             </form>
-
         </section>
+
+        <aside id="aside1">
+            <img src="Iniciar_Sesion.avif" alt="Iniciar Sesión" height="150px" width="150px">
+                <p>
+                    <strong> En esta sección se permite al usuario facilitar su nombre de usuario y su clave para poder acceder a su respectiva cuenta. Esto facilita distinguir a cada voluntario para que participen en las actividades y excursiones.</strong>
+                </p>
+        </aside>
+        </div>
+
+        <h2>Registro de usuario</h2>
+        <div id="div2">
         <section id="Registro">
-            <h2>Registro de usuario</h2>
             <form action="http://labtelema.ujaen.es/form.php" method="POST">
                 <fieldset id="RegistroFormulario">
                     <label for="Nombre_Registro">Nombre de usuario: </label>
@@ -121,18 +126,22 @@
                         <option value="Zaragoza">Zaragoza</option>
                     </select>
                     <input type="submit" value="Registrar">
-                    <aside id="aside2">
-                        <img src="Registro.jpg" alt="Registro" height="150px" width="150px">
-                        <p>
-                            <strong> En esta sección se permite llevar a cabo la creación de cuenta para los usuarios, de manera que puedan tener su lugar personal y manera de ser identificados en nuestra página. Este proceso es único y a partir del registro solo se deberá realizar el inicio de sesión.</strong>
-                        </p>
-                    </aside>
                 </fieldset>
             </form>
-
         </section>
+
+         <aside id="aside2">
+            <img src="Registro.jpg" alt="Registro" height="150px" width="150px">
+                 <p>
+                     <strong> En esta sección se permite llevar a cabo la creación de cuenta para los usuarios, de manera que puedan tener su lugar personal y manera de ser identificados en nuestra página. Este proceso es único y a partir del registro solo se deberá realizar el inicio de sesión.</strong>
+                 </p>
+         </aside>
+         </div>
+
+        <h2>Acerca de...</h2>
+        <div id="div3">
         <section id="Acercade">
-            <h2>Acerca de...</h2>
+
 
             <fieldset>
                 <p><strong>Proyecto:</strong> Seadream</p>
@@ -152,18 +161,16 @@
                 <p><strong>Asignatura:</strong> Servicios y Aplicaciones Telemáticas</p>
                 <p><strong>Titulación:</strong> Grado en Ingeniería de Tecnologías de Telecomunicación</p>
                 <p><strong>Curso:</strong> 2025-2026</p>
-
-
-                <aside id="aside3">
-                    <img id="png1" src="equipo.png" alt="Icono del equipo">
-                    <p>
-                        <strong>Esta sección permite conocer más sobre los objetivos y aspiraciones de los
-                            desarrolladores y detalles
-                            sobre ellos mismos. Se añaden datos universitarios y personales necesarios para identificar a cada miembro del equipo.</strong>
-                    </p>
-                </aside>
             </fieldset>
         </section>
+
+        <aside id="aside3">
+            <img id="png1" src="equipo.png" alt="Icono del equipo">
+                <p>
+                    <strong>Esta sección permite conocer más sobre los objetivos y aspiraciones de los desarrolladores y detalles sobre ellos mismos. Se añaden datos universitarios y personales necesarios para identificar a cada miembro del equipo.</strong>
+                </p>
+         </aside>
+         </div>
 
 
     </main>
