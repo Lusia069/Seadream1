@@ -17,10 +17,10 @@ h1{
     font-size: 100px;
     width: auto;
     height: auto;
-    background-color: aquamarine;
+    background-color: lightblue;
     background-position: center;
     border-radius: 100px;
-    border:10px solid #2078d6;
+    border:5px solid blue;
     box-sizing:border-box;
 }
 
@@ -53,26 +53,28 @@ fieldset{
     border: solid rgb(70, 67, 67) 3px;
     background-color: cornsilk;
     border-radius: 20px;
-    flex:1;
-}
-
-aside{
-    border: solid rgb(70, 67, 67) 3px;
-    background-color: cornsilk;
-    border-radius: 20px;
-    width: 100%;
-    margin-left: 30px;
-    
 }
 
 ul{
     display:flex;
+    gap:50px;
     list-style: none;
+    justify-content: center;
 }
 
-ul li{
-    flex:1;
-    text-align: center;
+nav a{
+    display:inline-block;
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+    font-family: Arial;
+    font-size:15px;
+    padding:15px;
+    width:80px;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    text-align:center;
+    border:2px solid black;
 }
 
 footer{
@@ -89,7 +91,7 @@ footer{
 }
 
 li:hover{
-    font-weight: bold;
+    color:grey
 }
 
 p{
@@ -108,14 +110,22 @@ img{
     width: 150px;
 }
 
-/*Diseño para los formularios*/
+/*Diseño para los formularios y "Acerca de"*/
+
+div{
+    justify-content: center;
+}
 
 #RegistroFormulario, #InicioFormulario, #Crear_Actividad{
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding: 20px;
-    width: 1000px;
+    width: 400px;
+}
+
+#Acercade{
+    width:600px;
 }
 
 #Crear_Actividad{
@@ -147,4 +157,46 @@ button[type="button"]{
 input:invalid {
     border: 2px solid rgb(255, 150, 150);
     color: red;
+}
+
+.Guia{
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#Proyecto{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+/*aside desing*/
+
+aside{
+    border: solid rgb(70, 67, 67) 3px;
+    background-color: cornsilk;
+    border-radius: 20px;
+    width: 270px;
+    height:380px;
+    margin-left: 30px;
+    padding:15px;
+    background-color: lightcyan;
+}
+
+aside p{
+        text-align: justify;
+}
+
+aside img{
+    display:block;
+    margin: auto;
+}
+
+.Descripcion{
+    text-decoration: underline;
+    font-size:22px;
+    text-align: center;
 }
