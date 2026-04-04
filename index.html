@@ -14,19 +14,21 @@
         <h1>Seadream</h1>
     </header>
 
-    <h2>Partes de SeaDream</h2>
-   
-        <nav>
-            <ul>
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#Registro">Registro</a></li>
-                <li><a href="#Acercade">Acerca de</a></li>
-            </ul>
-        </nav>
-   
+    <h2 id="TituloPartesSeadream">Partes de SeaDream</h2>
+
+    <nav>
+        <ul>
+            <li><a href="#TituloInicio" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+            <li><a href="#TituloRegistro" onclick="mostrarSeccion('registro')">Registro</a></li>
+            <li><a href="#TituloAcercade" onclick="mostrarSeccion('acercade')">Acerca de</a></li>
+            <li><a href="#TituloCrearActividad" onclick="mostrarSeccion('crear')">Crear actividad</a></li>
+            <li><a href="#TituloListado" onclick="mostrarSeccion('listado')">Lista de actividades</a></li>
+        </ul>
+    </nav>
+
     <main id="main1">
 
-        <h2>Inicio</h2>
+        <h2 id="TituloInicio">Inicio</h2>
         <div id="div1">
             <section id="Inicio">
                 <form action=" http://labtelema.ujaen.es/form.php" method="POST">
@@ -55,7 +57,7 @@
             </aside>
         </div>
 
-        <h2>Registro de usuario</h2>
+        <h2 id="TituloRegistro">Registro de usuario</h2>
         <div id="div2">
             <section id="Registro">
                 <form action="http://labtelema.ujaen.es/form.php" method="POST">
@@ -149,13 +151,13 @@
             </aside>
         </div>
 
-        <h2>Crear Actividad</h2>
+        <h2 id="TituloCrearActividad">Crear Actividad</h2>
 
-        <section>
+        <section id="Crear">
             <fieldset id="Crear_Actividad">
                 <label for="Nombre_actividad">Nombre de la actividad:</label>
-                <input type="text" id="Nombre_actividad" name="Nombre de la actividad" placeholder="Escribe el nombre de la actividad" required
-                    minlength="4" maxlength="16">
+                <input type="text" id="Nombre_actividad" name="Nombre de la actividad"
+                    placeholder="Escribe el nombre de la actividad" required minlength="4" maxlength="16">
                 <label for="Provincia">Provincia: </label>
                 <select id="Provincia" name="Provincia" placeholder="Elige una de las provincias de España" required>
                     <option value="Álava">Álava</option>
@@ -211,30 +213,40 @@
                 </select>
 
                 <label for="Dirección">Dirección de la actividad: </label>
-                <input type="text" id="Dirección" name="Dirección" placeholder="Ubicación donde se desarrollará la actividad" required>
+                <input type="text" id="Dirección" name="Dirección"
+                    placeholder="Ubicación donde se desarrollará la actividad" required>
 
                 <label for="Fecha">Fecha de la actividad: </label>
-                <input type="date" id="Fecha" name="Fecha" placeholder="Fecha en la que se desarrollará la actividad" required>
+                <input type="date" id="Fecha" name="Fecha" placeholder="Fecha en la que se desarrollará la actividad"
+                    required>
 
                 <label for="Horario">Horario de la actividad:</label>
-                <input type="time" id="Horario" name="Horario" placeholder="Horario en el que se desarrollará la actividad" required>
+                <input type="time" id="Horario" name="Horario"
+                    placeholder="Horario en el que se desarrollará la actividad" required>
 
                 <button type="button" onclick="guardarActividad()">Guardar actividad</button>
             </fieldset>
         </section>
 
-        <h2>Listado de actividades</h2>
-        <ul id="listaActividades"></ul>
+        <h2 id="TituloListado">Listado de actividades</h2>
 
-        <section>
+        <div id="div4">
+            <section id="Listado">
 
-        <h2>Acerca de...</h2>
+                <fieldset>
+                    <ul id="listaActividades"></ul>
+                </fieldset>
+            </section>
+        </div>
+
+        <h2 id="TituloAcercade">Acerca de...</h2>
         <div id="div3">
             <section id="Acercade">
                 <fieldset>
-                    <p class="Guia"><strong>Proyecto</strong></p><p id="Proyecto">Seadream</p>
+                    <p class="Guia"><strong>Proyecto</strong></p>
+                    <p id="Proyecto">Seadream</p>
                     <p class="Guia"><strong>¿Quiénes somos?</strong></p>
-                        <p>¡Somos el Equipo Alfa!, una asociación comprometida con el
+                    <p>¡Somos el Equipo Alfa!, una asociación comprometida con el
                         cuidado
                         de las costas y el
                         aprendizaje de las formas de vida marina. Nuestro objetivo es concienciar a las personas de la
