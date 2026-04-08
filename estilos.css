@@ -17,7 +17,7 @@ h1 {
     font-size: 100px;
     width: auto;
     height: auto;
-    background-color: lightblue;
+    background-color: rgb(173, 216, 230);
     background-position: center;
     border-radius: 100px;
     border: 5px solid blue;
@@ -142,6 +142,12 @@ select {
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #c9c7c7;
+}
+
+.boton-funcional {
+    background-color: rgb(173, 216, 230) !important;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0) !important;
 }
 
 input[type="submit"] {

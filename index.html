@@ -60,7 +60,7 @@
         <h2 id="TituloRegistro">Registro de usuario</h2>
         <div id="div2">
             <section id="Registro">
-                <form action="http://labtelema.ujaen.es/form.php" method="POST">
+                <form action="http://labtelema.ujaen.es/form.php" method="POST" >
                     <fieldset id="RegistroFormulario">
                         <label for="Nombre_Registro">Nombre de usuario: </label>
                         <input type="text" id="Nombre_Registro" name="user" placeholder="Escribe tu usuario" required
@@ -154,11 +154,12 @@
         <h2 id="TituloCrearActividad">Crear Actividad</h2>
 
         <section id="Crear">
-            <fieldset id="Crear_Actividad">
-                <label for="Nombre_actividad">Nombre de la actividad:</label>
-                <input type="text" id="Nombre_actividad" name="Nombre de la actividad"
-                    placeholder="Escribe el nombre de la actividad" required minlength="4" maxlength="16">
-                <label for="Provincia">Provincia: </label>
+            <form onsubmit="guardarActividad()" >
+                <fieldset id="Crear_Actividad">
+                    <label for="Nombre_actividad">Nombre de la actividad:</label>
+                    <input type="text" id="Nombre_actividad" name="Nombre de la actividad"
+                        placeholder="Escribe el nombre de la actividad" required minlength="4" maxlength="16">
+                    <label for="Provincia">Provincia: </label>
                 <select id="Provincia" name="Provincia" placeholder="Elige una de las provincias de España" required>
                     <option value="Álava">Álava</option>
                     <option value="Albacete">Albacete</option>
@@ -211,7 +212,7 @@
                     <option value="Zamora">Zamora</option>
                     <option value="Zaragoza">Zaragoza</option>
                 </select>
-
+                 
                 <label for="Dirección">Dirección de la actividad: </label>
                 <input type="text" id="Dirección" name="Dirección"
                     placeholder="Ubicación donde se desarrollará la actividad" required>
@@ -223,9 +224,11 @@
                 <label for="Horario">Horario de la actividad:</label>
                 <input type="time" id="Horario" name="Horario"
                     placeholder="Horario en el que se desarrollará la actividad" required>
-
+                 <input type="submit" value="Crear Actividad">
             </fieldset>
+        </form>
         </section>
+
 
         <h2 id="TituloListado">Listado de actividades</h2>
 
@@ -235,6 +238,10 @@
                 <fieldset>
                     <ul id="listaActividades"></ul>
                 </fieldset>
+
+                <button class="boton-funcional" type="button">Modificar Actividad</button>
+                <button class="boton-funcional" type="button">Borrar Actividad</button>
+
             </section>
         </div>
 

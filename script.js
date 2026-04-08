@@ -40,3 +40,25 @@ function mostrarSeccion(nombre) {
     document.getElementById("div4").style.display = "flex";
   }
 }
+
+let actividades=[];
+
+function guardarActividad(){
+    let correo = document.getElementById("Correo").value;
+    let nombre = document.getElementById("Nombre_Registro").value;
+    let provincia = document.getElementById("Provincia").value;
+    let direccion = document.getElementById("Direccion").value;
+    let fecha = document.getElementById("Fecha").value;
+    let horario = document.getElementById("Horario").value;
+
+    let actividad = {
+        correo: correo,
+        nombre: nombre,
+        provincia: provincia,
+        direccion: direccion,
+        fecha: fecha,
+        horario: horario
+    };
+
+    actividades.push(actividad);
+}
