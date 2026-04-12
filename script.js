@@ -15,6 +15,10 @@ function mostrarSeccion(nombre) {
   document.getElementById("TituloListado").style.display = "none";
   document.getElementById("div4").style.display = "none";
 
+  document.getElementById("TituloModificar").style.display = "none";
+  document.getElementById("div5").style.display = "none";
+
+
   if (nombre == "inicio") {
     document.getElementById("TituloInicio").style.display = "block";
     document.getElementById("div1").style.display = "flex";
@@ -39,6 +43,11 @@ function mostrarSeccion(nombre) {
     document.getElementById("TituloListado").style.display = "block";
     document.getElementById("div4").style.display = "flex";
   }
+
+  if (nombre == "modificar"){
+    document.getElementById("TituloModificar").style.display = "block";
+    document.getElementById("div5").style.display = "flex";
+  }
 }
 
 let actividades=[];
@@ -59,6 +68,24 @@ function guardarActividad(){
         fecha: fecha,
         horario: horario
     };
+actividades.push(actividad);
+  
+    }
 
-    actividades.push(actividad);
-}
+function modificarActividad(){ 
+      let nombre = document.getElementById("Nombre_actividadmodificar").value;
+      let provincia = document.getElementById("Provinciamodificar").value;
+      let direccion = document.getElementById("Direccionmodificar").value;
+      let fecha = document.getElementById("Fechamodificar").value;
+      let horario = document.getElementById("Horariomodificar").value;
+
+      let modificada = {
+       nombre: nombre,
+       provincia: provincia,
+       direccion: direccion,
+       fecha: fecha,
+       horario: horario,
+      };
+      
+      
+    }

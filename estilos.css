@@ -120,7 +120,8 @@ div {
 
 #RegistroFormulario,
 #InicioFormulario,
-#Crear_Actividad {
+#Crear_Actividad,
+#Modificar_Actividad {
     display: flex;
     flex-direction: column;
     gap: 12px;
