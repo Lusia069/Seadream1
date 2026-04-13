@@ -219,10 +219,12 @@ aside img {
 #div2,
 #div3,
 #div4,
+#div5,
 #Crear,
 #TituloRegistro,
 #TituloAcercade,
 #TituloCrearActividad,
+#TituloModificar,
 #TituloListado {
     display: none;
 }

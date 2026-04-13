@@ -49,19 +49,37 @@ function mostrarSeccion(nombre) {
     document.getElementById("div5").style.display = "flex";
   }
 }
+function registro(){
+  let nombre = document.getElementById("Nombre_Registro").value;
+  let correo = document.getElementById("Correo").value;
+  let nombre2 = document.getElementById("Nombre_usuario").value;
+  let apellidos = document.getElementById("Apellidos_usuario").value;
+  let contraseña = document.getElementById("Contraseña_usuario").value;
+  let contraseña2 = document.getElementById("Contraseña_verificada").value;
+  let provincia = document.getElementById("Provincia").value;
+
+  let registro2 = {
+    nombre: nombre,
+    correo: correo,
+    nombre2: nombre2,
+    apellidos: apellidos,
+    contraseña: contraseña,
+    contraseña2: contraseña2,
+    provincia: provincia
+  }
+}
+
 
 let actividades=[];
 
 function guardarActividad(){
-    let correo = document.getElementById("Correo").value;
-    let nombre = document.getElementById("Nombre_Registro").value;
+    let nombre = document.getElementById("Nombre_actividad").value;
     let provincia = document.getElementById("Provincia").value;
     let direccion = document.getElementById("Direccion").value;
     let fecha = document.getElementById("Fecha").value;
     let horario = document.getElementById("Horario").value;
 
     let actividad = {
-        correo: correo,
         nombre: nombre,
         provincia: provincia,
         direccion: direccion,
