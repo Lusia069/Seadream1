@@ -1,3 +1,13 @@
+
+/* Autores: Ismael Arroyo Arroyo, Lucía Almudena López Villar, Francisco Jesús Ortega Alcántara
+   Equipo: Equipo Alfa
+   Título del proyecto: Seadream
+   GitHub: https://github.com/Lusia069/SSAATT-2526-FE-Equipoalfa.git
+   Asignatura: Servicios y aplicaciones telemáticas
+   Titulación: Grado en Ingeniería de Tecnologías de Telecomunicación
+   Curso: 2025-2026
+*/
+
 body {
     background-image: url(Fondo.jpg);
 }
@@ -122,6 +132,11 @@ img {
     width: 400px;
 }
 
+textarea {
+    font-family: Arial;
+    resize: vertical;
+}
+
 #Acercade {
     width: 600px;
 }
@@ -132,7 +147,8 @@ img {
 
 input,
 button,
-select {
+select,
+textarea {
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #c9c7c7;
@@ -163,6 +179,22 @@ button[type="button"] {
 input:invalid {
     border: 2px solid rgb(255, 150, 150);
     color: red;
+}
+
+#mensajeError {
+    background-color: #ffcccc;
+    color: red;
+    padding: 10px;
+    border: 2px solid red;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: auto;
+    width: 600px;
+    height: 30px;   
+    margin-top: 50px;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .Guia {
@@ -239,4 +271,10 @@ aside img {
 .contenido {
     display: flex;
     justify-content: center;
+}
+
+.menu-activo {
+    background-color: #1aad1a !important;
+    color: white !important;
+    border: 2px solid yellow !important;
 }

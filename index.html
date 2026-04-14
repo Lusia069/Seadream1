@@ -1,3 +1,12 @@
+
+<!--Autores: Ismael Arroyo Arroyo, Lucía Almudena López Villar, Francisco Jesús Ortega Alcántara
+   Equipo: Equipo Alfa
+   Título del proyecto: Seadream
+   GitHub: https://github.com/Lusia069/SSAATT-2526-FE-Equipoalfa.git
+   Asignatura: Servicios y aplicaciones telemáticas
+   Titulación: Grado en Ingeniería de Tecnologías de Telecomunicación
+   Curso: 2025-2026-->
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,6 +19,9 @@
 </head>
 
 <body>
+
+    <aside id="mensajeError" class="oculto"></aside>
+
     <header id="header1">
         <h1>Seadream</h1>
     </header>
@@ -18,11 +30,11 @@
 
     <nav>
         <ul>
-            <li><a href="#TituloInicio" onclick="mostrarSeccion('inicio')">Inicio</a></li>
-            <li><a href="#TituloRegistro" onclick="mostrarSeccion('registro')">Registro</a></li>
-            <li><a href="#TituloCrearActividad" onclick="mostrarSeccion('crear')">Crear actividad</a></li>
-            <li><a href="#TituloListado" onclick="mostrarSeccion('listado')">Lista de actividades</a></li>
-            <li><a href="#TituloAcercade" onclick="mostrarSeccion('acercade')">Acerca de</a></li>
+            <li id="menuInicio"><a href="#TituloInicio" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+            <li id="menuRegistro"><a href="#TituloRegistro" onclick="mostrarSeccion('registro')">Registro</a></li>
+            <li id="menuCrear" class="oculto"><a href="#TituloCrearActividad" onclick="mostrarSeccion('crear')">Crear actividad</a></li>
+            <li id="menuListado" class="oculto"><a href="#TituloListado" onclick="mostrarSeccion('listado')">Lista de actividades</a></li>
+            <li id="menuAcercade"><a href="#TituloAcercade" onclick="mostrarSeccion('acercade')">Acerca de</a></li>
         </ul>
     </nav>
 
@@ -32,7 +44,7 @@
             <section id="Inicio">
                 <h2>Inicio</h2>
                 <div class="contenido">
-                    <form onsubmit="inicio()">
+                    <form onsubmit="inicio(event)">
                         <fieldset id="InicioFormulario">
                             <label for="nombre_inicio">Nombre de usuario: </label>
                             <input type="text" id="nombre_inicio" name="user" placeholder="Escribe tu usuario" required
@@ -63,7 +75,7 @@
             <section id="Registro">
                 <h2>Registro de usuario</h2>
                 <div class="contenido">
-                    <form onsubmit="registro()">
+                    <form onsubmit="registro(event)">
                         <fieldset id="RegistroFormulario">
                             <label for="Nombre_Registro">Nombre de usuario: </label>
                             <input type="text" id="Nombre_Registro" name="user" placeholder="Escribe tu usuario"
@@ -159,7 +171,7 @@
             <section id="Crear">
                 <h2>Crear Actividad</h2>
                 <div class="contenido">
-                    <form onsubmit="guardarActividad()">
+                    <form onsubmit="guardarActividad(event)">
                         <fieldset id="Crear_Actividad">
                             <label for="Nombre_actividad">Nombre de la actividad:</label>
                             <input type="text" id="Nombre_actividad" name="Nombre de la actividad"
@@ -230,7 +242,14 @@
                             <label for="Horario_crear">Horario de la actividad:</label>
                             <input type="time" id="Horario_crear" name="Horario"
                                 placeholder="Horario en el que se desarrollará la actividad" required>
+
+                            <label for="Descripcion_crear">Descripción de la actividad:</label>
+                            <textarea id="Descripcion_crear" name="Descripcion"
+                                placeholder="Escribe aquí la descripcción de la actividad..." maxlength="500"
+                                rows="4"></textarea>
+
                             <input type="submit" value="Crear Actividad">
+
                         </fieldset>
                     </form>
                 </div>
@@ -245,9 +264,9 @@
                         <ul id="listaActividades"></ul>
                     </fieldset>
 
-                    <button class="boton-funcional" type="button" onclick="mostrarSeccion('modificar')">Modificar
+                    <button id="botonModificar" class="boton-funcional" type="button" onclick="mostrarSeccion('modificar')">Modificar
                         Actividad</button>
-                    <button class="boton-funcional" type="button">Borrar Actividad</button>
+                    <button id="botonBorrar" class="boton-funcional" type="button" onclick="borrarActividad()">Borrar Actividad</button>
                 </div>
             </section>
         </div>
@@ -256,7 +275,7 @@
             <section id="Modificar">
                 <h2>Modificar actividades</h2>
                 <div class="contenido">
-                    <form onsubmit="modificarActividad()">
+                    <form onsubmit="modificarActividad(event)">
                         <fieldset id="Modificar_Actividad">
                             <label for="Nombre_actividadmodificar">Nombre de la actividad:</label>
                             <input type="text" id="Nombre_actividadmodificar" name="Nombre de la actividad"
@@ -327,7 +346,14 @@
                             <label for="Horariomodificar">Horario de la actividad:</label>
                             <input type="time" id="Horariomodificar" name="Horario"
                                 placeholder="Horario en el que se desarrollará la actividad" required>
+
+                            <label for="Descripcionmodificar">Descripción de la actividad:</label>
+                            <textarea id="Descripcionmodificar" name="Descripcion"
+                                placeholder="Escribe aquí la descripcción de la actividad..." maxlength="500"
+                                rows="4"></textarea>
+
                             <input type="submit" value="Modificar Actividad">
+
                         </fieldset>
                     </form>
                 </div>
