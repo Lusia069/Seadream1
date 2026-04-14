@@ -28,20 +28,22 @@
 
     <main id="main1">
 
-        <h2 id="TituloInicio">Inicio</h2>
-        <div id="div1">
+        <div id="divInicio" class="visible">
             <section id="Inicio">
-                <form onsubmit="inicio()">
-                    <fieldset id="InicioFormulario">
-                        <label for="nombre_inicio">Nombre de usuario: </label>
-                        <input type="text" id="nombre_inicio" name="user" placeholder="Escribe tu usuario" required
-                            minlength="4" maxlength="16">
-                        <label for="contraseña_inicio">Clave de usuario: </label>
-                        <input type="password" id="contraseña_inicio" name="password" placeholder="Escribe tu clave" required
-                            minlength="4" maxlength="16">
-                        <input type="submit" value="Entrar">
-                    </fieldset>
-                </form>
+                <h2>Inicio</h2>
+                <div class="contenido">
+                    <form onsubmit="inicio()">
+                        <fieldset id="InicioFormulario">
+                            <label for="nombre_inicio">Nombre de usuario: </label>
+                            <input type="text" id="nombre_inicio" name="user" placeholder="Escribe tu usuario" required
+                                minlength="4" maxlength="16">
+                            <label for="contraseña_inicio">Clave de usuario: </label>
+                            <input type="password" id="contraseña_inicio" name="password" placeholder="Escribe tu clave"
+                                required minlength="4" maxlength="16">
+                            <input type="submit" value="Entrar">
+                        </fieldset>
+                    </form>
+                </div>
             </section>
 
             <aside id="aside1">
@@ -57,85 +59,87 @@
             </aside>
         </div>
 
-        <h2 id="TituloRegistro">Registro de usuario</h2>
-        <div id="div2">
+        <div id="divRegistro" class="oculto">
             <section id="Registro">
-                <form onsubmit="registro()" >
-                    <fieldset id="RegistroFormulario">
-                        <label for="Nombre_Registro">Nombre de usuario: </label>
-                        <input type="text" id="Nombre_Registro" name="user" placeholder="Escribe tu usuario" required
-                            minlength="4" maxlength="16">
-                        <label for="Correo">Correo electrónico: </label>
-                        <input type="email" id="Correo" name="email" placeholder="Escribe tu correo" required>
-                        <label for="Nombre_usuario">Nombre: </label>
-                        <input type="text" id="Nombre_usuario" name="name" placeholder="Escribe tu nombre" required
-                            maxlength="32">
-                        <label for="Apellidos_usuario">Apellidos: </label>
-                        <input type="text" id="Apellidos_usuario" name="surname" placeholder="Escribe tus apellidos"
-                            maxlength="32">
-                        <label for="Contraseña_usuario">Clave de usuario: </label>
-                        <input type="password" id="Contraseña_usuario" name="password" placeholder="Escribe tu clave"
-                            minlength="4" maxlength="16" required>
-                        <label for="Contraseña_verificada">Comprobación de clave: </label>
-                        <input type="password" id="Contraseña_verificada" name="password-check"
-                            placeholder="Repite tu clave" minlength="4" maxlength="16" required>
-                        <label for="Provincia_registro">Provincia: </label>
-                        <select id="Provincia_registro" name="Provincia" placeholder="Elige una de las provincias de España"
-                            required>
-                            <option value="Álava">Álava</option>
-                            <option value="Albacete">Albacete</option>
-                            <option value="Alicante">Alicante</option>
-                            <option value="Almería">Almería</option>
-                            <option value="Asturias">Asturias</option>
-                            <option value="Ávila">Ávila</option>
-                            <option value="Badajoz">Badajoz</option>
-                            <option value="Barcelona">Barcelona</option>
-                            <option value="Burgos">Burgos</option>
-                            <option value="Cáceres">Cáceres</option>
-                            <option value="Cádiz">Cádiz</option>
-                            <option value="Cantabria">Cantabria</option>
-                            <option value="Castellón">Castellón</option>
-                            <option value="Ciudad Real">Ciudad Real</option>
-                            <option value="Córdoba">Córdoba</option>
-                            <option value="Cuenca">Cuenca</option>
-                            <option value="Girona">Girona</option>
-                            <option value="Granada">Granada</option>
-                            <option value="Guadalajara">Guadalajara</option>
-                            <option value="Guipúzcoa">Guipúzcoa</option>
-                            <option value="Huelva">Huelva</option>
-                            <option value="Huesca">Huesca</option>
-                            <option value="Islas Baleares">Islas Baleares</option>
-                            <option value="Jaén">Jaén</option>
-                            <option value="La Coruña">La Coruña</option>
-                            <option value="La Rioja">La Rioja</option>
-                            <option value="Las Palmas">Las Palmas</option>
-                            <option value="León">León</option>
-                            <option value="Lleida">Lleida</option>
-                            <option value="Lugo">Lugo</option>
-                            <option value="Madrid">Madrid</option>
-                            <option value="Málaga">Málaga</option>
-                            <option value="Murcia">Murcia</option>
-                            <option value="Navarra">Navarra</option>
-                            <option value="Ourense">Ourense</option>
-                            <option value="Palencia">Palencia</option>
-                            <option value="Pontevedra">Pontevedra</option>
-                            <option value="Salamanca">Salamanca</option>
-                            <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
-                            <option value="Segovia">Segovia</option>
-                            <option value="Sevilla">Sevilla</option>
-                            <option value="Soria">Soria</option>
-                            <option value="Tarragona">Tarragona</option>
-                            <option value="Teruel">Teruel</option>
-                            <option value="Toledo">Toledo</option>
-                            <option value="Valencia">Valencia</option>
-                            <option value="Valladolid">Valladolid</option>
-                            <option value="Vizcaya">Vizcaya</option>
-                            <option value="Zamora">Zamora</option>
-                            <option value="Zaragoza">Zaragoza</option>
-                        </select>
-                        <input type="submit" value="Registrar">
-                    </fieldset>
-                </form>
+                <h2>Registro de usuario</h2>
+                <div class="contenido">
+                    <form onsubmit="registro()">
+                        <fieldset id="RegistroFormulario">
+                            <label for="Nombre_Registro">Nombre de usuario: </label>
+                            <input type="text" id="Nombre_Registro" name="user" placeholder="Escribe tu usuario"
+                                required minlength="4" maxlength="16">
+                            <label for="Correo">Correo electrónico: </label>
+                            <input type="email" id="Correo" name="email" placeholder="Escribe tu correo" required>
+                            <label for="Nombre_usuario">Nombre: </label>
+                            <input type="text" id="Nombre_usuario" name="name" placeholder="Escribe tu nombre" required
+                                maxlength="32">
+                            <label for="Apellidos_usuario">Apellidos: </label>
+                            <input type="text" id="Apellidos_usuario" name="surname" placeholder="Escribe tus apellidos"
+                                maxlength="32">
+                            <label for="Contraseña_usuario">Clave de usuario: </label>
+                            <input type="password" id="Contraseña_usuario" name="password"
+                                placeholder="Escribe tu clave" minlength="4" maxlength="16" required>
+                            <label for="Contraseña_verificada">Comprobación de clave: </label>
+                            <input type="password" id="Contraseña_verificada" name="password-check"
+                                placeholder="Repite tu clave" minlength="4" maxlength="16" required>
+                            <label for="Provincia_registro">Provincia: </label>
+                            <select id="Provincia_registro" name="Provincia"
+                                placeholder="Elige una de las provincias de España" required>
+                                <option value="Álava">Álava</option>
+                                <option value="Albacete">Albacete</option>
+                                <option value="Alicante">Alicante</option>
+                                <option value="Almería">Almería</option>
+                                <option value="Asturias">Asturias</option>
+                                <option value="Ávila">Ávila</option>
+                                <option value="Badajoz">Badajoz</option>
+                                <option value="Barcelona">Barcelona</option>
+                                <option value="Burgos">Burgos</option>
+                                <option value="Cáceres">Cáceres</option>
+                                <option value="Cádiz">Cádiz</option>
+                                <option value="Cantabria">Cantabria</option>
+                                <option value="Castellón">Castellón</option>
+                                <option value="Ciudad Real">Ciudad Real</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Cuenca">Cuenca</option>
+                                <option value="Girona">Girona</option>
+                                <option value="Granada">Granada</option>
+                                <option value="Guadalajara">Guadalajara</option>
+                                <option value="Guipúzcoa">Guipúzcoa</option>
+                                <option value="Huelva">Huelva</option>
+                                <option value="Huesca">Huesca</option>
+                                <option value="Islas Baleares">Islas Baleares</option>
+                                <option value="Jaén">Jaén</option>
+                                <option value="La Coruña">La Coruña</option>
+                                <option value="La Rioja">La Rioja</option>
+                                <option value="Las Palmas">Las Palmas</option>
+                                <option value="León">León</option>
+                                <option value="Lleida">Lleida</option>
+                                <option value="Lugo">Lugo</option>
+                                <option value="Madrid">Madrid</option>
+                                <option value="Málaga">Málaga</option>
+                                <option value="Murcia">Murcia</option>
+                                <option value="Navarra">Navarra</option>
+                                <option value="Ourense">Ourense</option>
+                                <option value="Palencia">Palencia</option>
+                                <option value="Pontevedra">Pontevedra</option>
+                                <option value="Salamanca">Salamanca</option>
+                                <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
+                                <option value="Segovia">Segovia</option>
+                                <option value="Sevilla">Sevilla</option>
+                                <option value="Soria">Soria</option>
+                                <option value="Tarragona">Tarragona</option>
+                                <option value="Teruel">Teruel</option>
+                                <option value="Toledo">Toledo</option>
+                                <option value="Valencia">Valencia</option>
+                                <option value="Valladolid">Valladolid</option>
+                                <option value="Vizcaya">Vizcaya</option>
+                                <option value="Zamora">Zamora</option>
+                                <option value="Zaragoza">Zaragoza</option>
+                            </select>
+                            <input type="submit" value="Registrar">
+                        </fieldset>
+                    </form>
+                </div>
             </section>
 
             <aside id="aside2">
@@ -151,212 +155,223 @@
             </aside>
         </div>
 
-        <h2 id="TituloCrearActividad">Crear Actividad</h2>
+        <div id="divCrearActividad" class="oculto">
+            <section id="Crear">
+                <h2>Crear Actividad</h2>
+                <div class="contenido">
+                    <form onsubmit="guardarActividad()">
+                        <fieldset id="Crear_Actividad">
+                            <label for="Nombre_actividad">Nombre de la actividad:</label>
+                            <input type="text" id="Nombre_actividad" name="Nombre de la actividad"
+                                placeholder="Escribe el nombre de la actividad" required minlength="4" maxlength="16">
+                            <label for="Provincia_crear">Provincia: </label>
+                            <select id="Provincia_crear" name="Provincia"
+                                placeholder="Elige una de las provincias de España" required>
+                                <option value="Álava">Álava</option>
+                                <option value="Albacete">Albacete</option>
+                                <option value="Alicante">Alicante</option>
+                                <option value="Almería">Almería</option>
+                                <option value="Asturias">Asturias</option>
+                                <option value="Ávila">Ávila</option>
+                                <option value="Badajoz">Badajoz</option>
+                                <option value="Barcelona">Barcelona</option>
+                                <option value="Burgos">Burgos</option>
+                                <option value="Cáceres">Cáceres</option>
+                                <option value="Cádiz">Cádiz</option>
+                                <option value="Cantabria">Cantabria</option>
+                                <option value="Castellón">Castellón</option>
+                                <option value="Ciudad Real">Ciudad Real</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Cuenca">Cuenca</option>
+                                <option value="Girona">Girona</option>
+                                <option value="Granada">Granada</option>
+                                <option value="Guadalajara">Guadalajara</option>
+                                <option value="Guipúzcoa">Guipúzcoa</option>
+                                <option value="Huelva">Huelva</option>
+                                <option value="Huesca">Huesca</option>
+                                <option value="Islas Baleares">Islas Baleares</option>
+                                <option value="Jaén">Jaén</option>
+                                <option value="La Coruña">La Coruña</option>
+                                <option value="La Rioja">La Rioja</option>
+                                <option value="Las Palmas">Las Palmas</option>
+                                <option value="León">León</option>
+                                <option value="Lleida">Lleida</option>
+                                <option value="Lugo">Lugo</option>
+                                <option value="Madrid">Madrid</option>
+                                <option value="Málaga">Málaga</option>
+                                <option value="Murcia">Murcia</option>
+                                <option value="Navarra">Navarra</option>
+                                <option value="Ourense">Ourense</option>
+                                <option value="Palencia">Palencia</option>
+                                <option value="Pontevedra">Pontevedra</option>
+                                <option value="Salamanca">Salamanca</option>
+                                <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
+                                <option value="Segovia">Segovia</option>
+                                <option value="Sevilla">Sevilla</option>
+                                <option value="Soria">Soria</option>
+                                <option value="Tarragona">Tarragona</option>
+                                <option value="Teruel">Teruel</option>
+                                <option value="Toledo">Toledo</option>
+                                <option value="Valencia">Valencia</option>
+                                <option value="Valladolid">Valladolid</option>
+                                <option value="Vizcaya">Vizcaya</option>
+                                <option value="Zamora">Zamora</option>
+                                <option value="Zaragoza">Zaragoza</option>
+                            </select>
 
-        <section id="Crear">
-            <form onsubmit="guardarActividad()" >
-                <fieldset id="Crear_Actividad">
-                    <label for="Nombre_actividad">Nombre de la actividad:</label>
-                    <input type="text" id="Nombre_actividad" name="Nombre de la actividad"
-                        placeholder="Escribe el nombre de la actividad" required minlength="4" maxlength="16">
-                    <label for="Provincia_crear">Provincia: </label>
-                <select id="Provincia_crear" name="Provincia" placeholder="Elige una de las provincias de España" required>
-                    <option value="Álava">Álava</option>
-                    <option value="Albacete">Albacete</option>
-                    <option value="Alicante">Alicante</option>
-                    <option value="Almería">Almería</option>
-                    <option value="Asturias">Asturias</option>
-                    <option value="Ávila">Ávila</option>
-                    <option value="Badajoz">Badajoz</option>
-                    <option value="Barcelona">Barcelona</option>
-                    <option value="Burgos">Burgos</option>
-                    <option value="Cáceres">Cáceres</option>
-                    <option value="Cádiz">Cádiz</option>
-                    <option value="Cantabria">Cantabria</option>
-                    <option value="Castellón">Castellón</option>
-                    <option value="Ciudad Real">Ciudad Real</option>
-                    <option value="Córdoba">Córdoba</option>
-                    <option value="Cuenca">Cuenca</option>
-                    <option value="Girona">Girona</option>
-                    <option value="Granada">Granada</option>
-                    <option value="Guadalajara">Guadalajara</option>
-                    <option value="Guipúzcoa">Guipúzcoa</option>
-                    <option value="Huelva">Huelva</option>
-                    <option value="Huesca">Huesca</option>
-                    <option value="Islas Baleares">Islas Baleares</option>
-                    <option value="Jaén">Jaén</option>
-                    <option value="La Coruña">La Coruña</option>
-                    <option value="La Rioja">La Rioja</option>
-                    <option value="Las Palmas">Las Palmas</option>
-                    <option value="León">León</option>
-                    <option value="Lleida">Lleida</option>
-                    <option value="Lugo">Lugo</option>
-                    <option value="Madrid">Madrid</option>
-                    <option value="Málaga">Málaga</option>
-                    <option value="Murcia">Murcia</option>
-                    <option value="Navarra">Navarra</option>
-                    <option value="Ourense">Ourense</option>
-                    <option value="Palencia">Palencia</option>
-                    <option value="Pontevedra">Pontevedra</option>
-                    <option value="Salamanca">Salamanca</option>
-                    <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
-                    <option value="Segovia">Segovia</option>
-                    <option value="Sevilla">Sevilla</option>
-                    <option value="Soria">Soria</option>
-                    <option value="Tarragona">Tarragona</option>
-                    <option value="Teruel">Teruel</option>
-                    <option value="Toledo">Toledo</option>
-                    <option value="Valencia">Valencia</option>
-                    <option value="Valladolid">Valladolid</option>
-                    <option value="Vizcaya">Vizcaya</option>
-                    <option value="Zamora">Zamora</option>
-                    <option value="Zaragoza">Zaragoza</option>
-                </select>
-                 
-                <label for="Direccion_crear">Dirección de la actividad: </label>
-                <input type="text" id="Direccion_crear" name="Dirección"
-                    placeholder="Ubicación donde se desarrollará la actividad" required>
+                            <label for="Direccion_crear">Dirección de la actividad: </label>
+                            <input type="text" id="Direccion_crear" name="Dirección"
+                                placeholder="Ubicación donde se desarrollará la actividad" required>
 
-                <label for="Fecha_crear">Fecha de la actividad: </label>
-                <input type="date" id="Fecha_crear" name="Fecha" placeholder="Fecha en la que se desarrollará la actividad"
-                    required>
+                            <label for="Fecha_crear">Fecha de la actividad: </label>
+                            <input type="date" id="Fecha_crear" name="Fecha"
+                                placeholder="Fecha en la que se desarrollará la actividad" required>
 
-                <label for="Horario_crear">Horario de la actividad:</label>
-                <input type="time" id="Horario_crear" name="Horario"
-                    placeholder="Horario en el que se desarrollará la actividad" required>
-                 <input type="submit" value="Crear Actividad">
-            </fieldset>
-        </form>
-        </section>
-
-
-        <h2 id="TituloListado">Listado de actividades</h2>
-
-        <div id="div4">
-            <section id="Listado">
-
-                <fieldset>
-                    <ul id="listaActividades"></ul>
-                </fieldset>
-
-                <button class="boton-funcional" type="button" onclick="mostrarSeccion('modificar')">Modificar Actividad</button>
-                <button class="boton-funcional" type="button">Borrar Actividad</button>
-
+                            <label for="Horario_crear">Horario de la actividad:</label>
+                            <input type="time" id="Horario_crear" name="Horario"
+                                placeholder="Horario en el que se desarrollará la actividad" required>
+                            <input type="submit" value="Crear Actividad">
+                        </fieldset>
+                    </form>
+                </div>
             </section>
         </div>
-        <h2 id="TituloModificar">Modificar actividades</h2>
-        <div id="div5">
-         <section id="Modificar">
-            <form onsubmit="modificarActividad()" >
-                <fieldset id="Modificar_Actividad">
-                    <label for="Nombre_actividadmodificar">Nombre de la actividad:</label>
-                    <input type="text" id="Nombre_actividadmodificar" name="Nombre de la actividad"
-                        placeholder="Escribe el nombre de la actividad" required minlength="4" maxlength="16">
-                    <label for="Provinciamodificar">Provincia: </label>
-                <select id="Provinciamodificar" name="Provincia" placeholder="Elige una de las provincias de España" required>
-                    <option value="Álava">Álava</option>
-                    <option value="Albacete">Albacete</option>
-                    <option value="Alicante">Alicante</option>
-                    <option value="Almería">Almería</option>
-                    <option value="Asturias">Asturias</option>
-                    <option value="Ávila">Ávila</option>
-                    <option value="Badajoz">Badajoz</option>
-                    <option value="Barcelona">Barcelona</option>
-                    <option value="Burgos">Burgos</option>
-                    <option value="Cáceres">Cáceres</option>
-                    <option value="Cádiz">Cádiz</option>
-                    <option value="Cantabria">Cantabria</option>
-                    <option value="Castellón">Castellón</option>
-                    <option value="Ciudad Real">Ciudad Real</option>
-                    <option value="Córdoba">Córdoba</option>
-                    <option value="Cuenca">Cuenca</option>
-                    <option value="Girona">Girona</option>
-                    <option value="Granada">Granada</option>
-                    <option value="Guadalajara">Guadalajara</option>
-                    <option value="Guipúzcoa">Guipúzcoa</option>
-                    <option value="Huelva">Huelva</option>
-                    <option value="Huesca">Huesca</option>
-                    <option value="Islas Baleares">Islas Baleares</option>
-                    <option value="Jaén">Jaén</option>
-                    <option value="La Coruña">La Coruña</option>
-                    <option value="La Rioja">La Rioja</option>
-                    <option value="Las Palmas">Las Palmas</option>
-                    <option value="León">León</option>
-                    <option value="Lleida">Lleida</option>
-                    <option value="Lugo">Lugo</option>
-                    <option value="Madrid">Madrid</option>
-                    <option value="Málaga">Málaga</option>
-                    <option value="Murcia">Murcia</option>
-                    <option value="Navarra">Navarra</option>
-                    <option value="Ourense">Ourense</option>
-                    <option value="Palencia">Palencia</option>
-                    <option value="Pontevedra">Pontevedra</option>
-                    <option value="Salamanca">Salamanca</option>
-                    <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
-                    <option value="Segovia">Segovia</option>
-                    <option value="Sevilla">Sevilla</option>
-                    <option value="Soria">Soria</option>
-                    <option value="Tarragona">Tarragona</option>
-                    <option value="Teruel">Teruel</option>
-                    <option value="Toledo">Toledo</option>
-                    <option value="Valencia">Valencia</option>
-                    <option value="Valladolid">Valladolid</option>
-                    <option value="Vizcaya">Vizcaya</option>
-                    <option value="Zamora">Zamora</option>
-                    <option value="Zaragoza">Zaragoza</option>
-                </select>
-                 
-                <label for="Direccionmodificar">Dirección de la actividad: </label>
-                <input type="text" id="Direccionmodificar" name="Dirección"
-                    placeholder="Ubicación donde se desarrollará la actividad" required>
 
-                <label for="Fechamodificar">Fecha de la actividad: </label>
-                <input type="date" id="Fechamodificar" name="Fecha" placeholder="Fecha en la que se desarrollará la actividad"
-                    required>
+        <div id="divListado" class="oculto">
+            <section id="Listado">
+                <h2>Listado de actividades</h2>
+                <div class="contenido">
+                    <fieldset>
+                        <ul id="listaActividades"></ul>
+                    </fieldset>
 
-                <label for="Horariomodificar">Horario de la actividad:</label>
-                <input type="time" id="Horariomodificar" name="Horario"
-                    placeholder="Horario en el que se desarrollará la actividad" required>
-                 <input type="submit" value="Modificar Actividad">
-            </fieldset>
-        </form>
-        </section>
+                    <button class="boton-funcional" type="button" onclick="mostrarSeccion('modificar')">Modificar
+                        Actividad</button>
+                    <button class="boton-funcional" type="button">Borrar Actividad</button>
+                </div>
+            </section>
         </div>
 
+        <div id="divModificarActividad" class="oculto">
+            <section id="Modificar">
+                <h2>Modificar actividades</h2>
+                <div class="contenido">
+                    <form onsubmit="modificarActividad()">
+                        <fieldset id="Modificar_Actividad">
+                            <label for="Nombre_actividadmodificar">Nombre de la actividad:</label>
+                            <input type="text" id="Nombre_actividadmodificar" name="Nombre de la actividad"
+                                placeholder="Escribe el nombre de la actividad" required minlength="4" maxlength="16">
+                            <label for="Provinciamodificar">Provincia: </label>
+                            <select id="Provinciamodificar" name="Provincia"
+                                placeholder="Elige una de las provincias de España" required>
+                                <option value="Álava">Álava</option>
+                                <option value="Albacete">Albacete</option>
+                                <option value="Alicante">Alicante</option>
+                                <option value="Almería">Almería</option>
+                                <option value="Asturias">Asturias</option>
+                                <option value="Ávila">Ávila</option>
+                                <option value="Badajoz">Badajoz</option>
+                                <option value="Barcelona">Barcelona</option>
+                                <option value="Burgos">Burgos</option>
+                                <option value="Cáceres">Cáceres</option>
+                                <option value="Cádiz">Cádiz</option>
+                                <option value="Cantabria">Cantabria</option>
+                                <option value="Castellón">Castellón</option>
+                                <option value="Ciudad Real">Ciudad Real</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Cuenca">Cuenca</option>
+                                <option value="Girona">Girona</option>
+                                <option value="Granada">Granada</option>
+                                <option value="Guadalajara">Guadalajara</option>
+                                <option value="Guipúzcoa">Guipúzcoa</option>
+                                <option value="Huelva">Huelva</option>
+                                <option value="Huesca">Huesca</option>
+                                <option value="Islas Baleares">Islas Baleares</option>
+                                <option value="Jaén">Jaén</option>
+                                <option value="La Coruña">La Coruña</option>
+                                <option value="La Rioja">La Rioja</option>
+                                <option value="Las Palmas">Las Palmas</option>
+                                <option value="León">León</option>
+                                <option value="Lleida">Lleida</option>
+                                <option value="Lugo">Lugo</option>
+                                <option value="Madrid">Madrid</option>
+                                <option value="Málaga">Málaga</option>
+                                <option value="Murcia">Murcia</option>
+                                <option value="Navarra">Navarra</option>
+                                <option value="Ourense">Ourense</option>
+                                <option value="Palencia">Palencia</option>
+                                <option value="Pontevedra">Pontevedra</option>
+                                <option value="Salamanca">Salamanca</option>
+                                <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
+                                <option value="Segovia">Segovia</option>
+                                <option value="Sevilla">Sevilla</option>
+                                <option value="Soria">Soria</option>
+                                <option value="Tarragona">Tarragona</option>
+                                <option value="Teruel">Teruel</option>
+                                <option value="Toledo">Toledo</option>
+                                <option value="Valencia">Valencia</option>
+                                <option value="Valladolid">Valladolid</option>
+                                <option value="Vizcaya">Vizcaya</option>
+                                <option value="Zamora">Zamora</option>
+                                <option value="Zaragoza">Zaragoza</option>
+                            </select>
 
-        <h2 id="TituloAcercade">Acerca de...</h2>
-        <div id="div3">
+                            <label for="Direccionmodificar">Dirección de la actividad: </label>
+                            <input type="text" id="Direccionmodificar" name="Dirección"
+                                placeholder="Ubicación donde se desarrollará la actividad" required>
+
+                            <label for="Fechamodificar">Fecha de la actividad: </label>
+                            <input type="date" id="Fechamodificar" name="Fecha"
+                                placeholder="Fecha en la que se desarrollará la actividad" required>
+
+                            <label for="Horariomodificar">Horario de la actividad:</label>
+                            <input type="time" id="Horariomodificar" name="Horario"
+                                placeholder="Horario en el que se desarrollará la actividad" required>
+                            <input type="submit" value="Modificar Actividad">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <div id="divAcercaDe" class="oculto">
             <section id="Acercade">
-                <fieldset>
-                    <p class="Guia"><strong>Proyecto</strong></p>
-                    <p id="Proyecto">Seadream</p>
-                    <p class="Guia"><strong>¿Quiénes somos?</strong></p>
-                    <p>¡Somos el Equipo Alfa!, una asociación comprometida con el
-                        cuidado
-                        de las costas y el
-                        aprendizaje de las formas de vida marina. Nuestro objetivo es concienciar a las personas de la
-                        importancia del mantenimiento del entorno costero y transmitir la belleza de todos los elementos
-                        que
-                        lo componen. Entre nuestro servicios se encuentran las actividades de limpieza y cuidado de
-                        costas y
-                        las excursiones educativas ¿A qué estás esperando? ¡Salta al agua y únete a
-                        nosotros!</p>
-                    <p class="Guia"><strong>¿Qué podrás hacer aquí?: </strong></p>
-                    <p>La principal función de la página web de SeaDream es
-                        que
-                        proporcionar a la gente una manera sencilla de colaborar por el cuidado de nuestras costas,
-                        pudiendo participar
-                        en actividades relacionadas con la limpieza de las mismas en las zonas que más les convengan.
-                        Así mismo, planteamos
-                        que en un futuro la plataforma permita acceder a otras actividades relacionadas con el mar y
-                        océano, como buceo, viajes, etc.</p>
-                    <p class="Guia"><strong>Integrantes:</strong></p>
-                    <p>Ismael Arroyo Arroyo, Lucía Almudena López Villar, Francisco Jesús
-                        Ortega Alcántara</p>
-                    <p><strong>Asignatura:</strong> Servicios y Aplicaciones Telemáticas</p>
-                    <p><strong>Titulación:</strong> Grado en Ingeniería de Tecnologías de Telecomunicación</p>
-                    <p><strong>Curso:</strong> 2025-2026</p>
-                </fieldset>
+                <h2>Acerca de...</h2>
+                <div class="contenido">
+                    <fieldset>
+                        <p class="Guia"><strong>Proyecto</strong></p>
+                        <p id="Proyecto">Seadream</p>
+                        <p class="Guia"><strong>¿Quiénes somos?</strong></p>
+                        <p>¡Somos el Equipo Alfa!, una asociación comprometida con el
+                            cuidado
+                            de las costas y el
+                            aprendizaje de las formas de vida marina. Nuestro objetivo es concienciar a las personas de
+                            la
+                            importancia del mantenimiento del entorno costero y transmitir la belleza de todos los
+                            elementos
+                            que
+                            lo componen. Entre nuestro servicios se encuentran las actividades de limpieza y cuidado de
+                            costas y
+                            las excursiones educativas ¿A qué estás esperando? ¡Salta al agua y únete a
+                            nosotros!</p>
+                        <p class="Guia"><strong>¿Qué podrás hacer aquí?: </strong></p>
+                        <p>La principal función de la página web de SeaDream es
+                            que
+                            proporcionar a la gente una manera sencilla de colaborar por el cuidado de nuestras costas,
+                            pudiendo participar
+                            en actividades relacionadas con la limpieza de las mismas en las zonas que más les
+                            convengan.
+                            Así mismo, planteamos
+                            que en un futuro la plataforma permita acceder a otras actividades relacionadas con el mar y
+                            océano, como buceo, viajes, etc.</p>
+                        <p class="Guia"><strong>Integrantes:</strong></p>
+                        <p>Ismael Arroyo Arroyo, Lucía Almudena López Villar, Francisco Jesús
+                            Ortega Alcántara</p>
+                        <p><strong>Asignatura:</strong> Servicios y Aplicaciones Telemáticas</p>
+                        <p><strong>Titulación:</strong> Grado en Ingeniería de Tecnologías de Telecomunicación</p>
+                        <p><strong>Curso:</strong> 2025-2026</p>
+                    </fieldset>
+                </div>
             </section>
 
             <aside id="aside3">
