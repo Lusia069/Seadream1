@@ -31,13 +31,13 @@
         <h2 id="TituloInicio">Inicio</h2>
         <div id="div1">
             <section id="Inicio">
-                <form action=" http://labtelema.ujaen.es/form.php" method="POST">
+                <form onsubmit="inicio()">
                     <fieldset id="InicioFormulario">
-                        <label for="nombre">Nombre de usuario: </label>
-                        <input type="text" id="nombre" name="user" placeholder="Escribe tu usuario" required
+                        <label for="nombre_inicio">Nombre de usuario: </label>
+                        <input type="text" id="nombre_inicio" name="user" placeholder="Escribe tu usuario" required
                             minlength="4" maxlength="16">
-                        <label for="contraseña">Clave de usuario: </label>
-                        <input type="password" id="contraseña" name="password" placeholder="Escribe tu clave" required
+                        <label for="contraseña_inicio">Clave de usuario: </label>
+                        <input type="password" id="contraseña_inicio" name="password" placeholder="Escribe tu clave" required
                             minlength="4" maxlength="16">
                         <input type="submit" value="Entrar">
                     </fieldset>
@@ -60,7 +60,7 @@
         <h2 id="TituloRegistro">Registro de usuario</h2>
         <div id="div2">
             <section id="Registro">
-                <form action="http://labtelema.ujaen.es/form.php" method="POST" >
+                <form onsubmit="registro()" >
                     <fieldset id="RegistroFormulario">
                         <label for="Nombre_Registro">Nombre de usuario: </label>
                         <input type="text" id="Nombre_Registro" name="user" placeholder="Escribe tu usuario" required
@@ -79,8 +79,8 @@
                         <label for="Contraseña_verificada">Comprobación de clave: </label>
                         <input type="password" id="Contraseña_verificada" name="password-check"
                             placeholder="Repite tu clave" minlength="4" maxlength="16" required>
-                        <label for="Provincia">Provincia: </label>
-                        <select id="Provincia" name="Provincia" placeholder="Elige una de las provincias de España"
+                        <label for="Provincia_registro">Provincia: </label>
+                        <select id="Provincia_registro" name="Provincia" placeholder="Elige una de las provincias de España"
                             required>
                             <option value="Álava">Álava</option>
                             <option value="Albacete">Albacete</option>
@@ -159,8 +159,8 @@
                     <label for="Nombre_actividad">Nombre de la actividad:</label>
                     <input type="text" id="Nombre_actividad" name="Nombre de la actividad"
                         placeholder="Escribe el nombre de la actividad" required minlength="4" maxlength="16">
-                    <label for="Provincia">Provincia: </label>
-                <select id="Provincia" name="Provincia" placeholder="Elige una de las provincias de España" required>
+                    <label for="Provincia_crear">Provincia: </label>
+                <select id="Provincia_crear" name="Provincia" placeholder="Elige una de las provincias de España" required>
                     <option value="Álava">Álava</option>
                     <option value="Albacete">Albacete</option>
                     <option value="Alicante">Alicante</option>
@@ -213,16 +213,16 @@
                     <option value="Zaragoza">Zaragoza</option>
                 </select>
                  
-                <label for="Direccion">Dirección de la actividad: </label>
-                <input type="text" id="Direccion" name="Dirección"
+                <label for="Direccion_crear">Dirección de la actividad: </label>
+                <input type="text" id="Direccion_crear" name="Dirección"
                     placeholder="Ubicación donde se desarrollará la actividad" required>
 
-                <label for="Fecha">Fecha de la actividad: </label>
-                <input type="date" id="Fecha" name="Fecha" placeholder="Fecha en la que se desarrollará la actividad"
+                <label for="Fecha_crear">Fecha de la actividad: </label>
+                <input type="date" id="Fecha_crear" name="Fecha" placeholder="Fecha en la que se desarrollará la actividad"
                     required>
 
-                <label for="Horario">Horario de la actividad:</label>
-                <input type="time" id="Horario" name="Horario"
+                <label for="Horario_crear">Horario de la actividad:</label>
+                <input type="time" id="Horario_crear" name="Horario"
                     placeholder="Horario en el que se desarrollará la actividad" required>
                  <input type="submit" value="Crear Actividad">
             </fieldset>

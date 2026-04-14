@@ -49,6 +49,17 @@ function mostrarSeccion(nombre) {
     document.getElementById("div5").style.display = "flex";
   }
 }
+
+function inicio(){
+  let nombre = document.getElementById("nombre_inicio").value;
+  let contraseña= document.getElementById("contraseña_inicio").value;
+
+  let inicio2 = {
+    nombre: nombre, 
+    contraseña: contraseña
+  };
+}
+
 function registro(){
   let nombre = document.getElementById("Nombre_Registro").value;
   let correo = document.getElementById("Correo").value;
@@ -56,9 +67,12 @@ function registro(){
   let apellidos = document.getElementById("Apellidos_usuario").value;
   let contraseña = document.getElementById("Contraseña_usuario").value;
   let contraseña2 = document.getElementById("Contraseña_verificada").value;
-  let provincia = document.getElementById("Provincia").value;
-
-  let registro2 = {
+  let provincia = document.getElementById("Provincia_registro").value;
+  if (contraseña != contraseña2){
+    alert("Las contraseñas no son iguales");
+  }
+  else {
+    let registro2 = {
     nombre: nombre,
     correo: correo,
     nombre2: nombre2,
@@ -66,6 +80,8 @@ function registro(){
     contraseña: contraseña,
     contraseña2: contraseña2,
     provincia: provincia
+    
+  };
   }
 }
 
@@ -74,10 +90,10 @@ let actividades=[];
 
 function guardarActividad(){
     let nombre = document.getElementById("Nombre_actividad").value;
-    let provincia = document.getElementById("Provincia").value;
-    let direccion = document.getElementById("Direccion").value;
-    let fecha = document.getElementById("Fecha").value;
-    let horario = document.getElementById("Horario").value;
+    let provincia = document.getElementById("Provincia_crear").value;
+    let direccion = document.getElementById("Direccion_crear").value;
+    let fecha = document.getElementById("Fecha_crear").value;
+    let horario = document.getElementById("Horario_crear").value;
 
     let actividad = {
         nombre: nombre,
@@ -102,7 +118,7 @@ function modificarActividad(){
        provincia: provincia,
        direccion: direccion,
        fecha: fecha,
-       horario: horario,
+       horario: horario
       };
       
       
