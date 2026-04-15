@@ -61,12 +61,12 @@ function inicio(event) {
     contraseña: contraseña
   };
 
-  if (nombre === "admin" && contraseña === "1234") {
+  if (nombre === "admin" && contraseña === "1111") {
     autenticado = true;
     alert("Autenticación satisfactoria");
     mostrarSeccion('acercade');
     gestionarMenuAdmin(autenticado);
-  } else if (nombre === "usuario" && contraseña === "1234") {
+  } else if (nombre === "usuario" && contraseña === "1111") {
     autenticado = true;
     alert("Autenticación satisfactoria");
     mostrarSeccion('acercade');
