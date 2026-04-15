@@ -12,35 +12,41 @@ function mostrarSeccion(nombre) {
 
   actualizarMenuActivo(nombre);
 
-  document.getElementById("divInicio").className = "oculto";
-  document.getElementById("divRegistro").className = "oculto";
-  document.getElementById("divCrearActividad").className = "oculto";
-  document.getElementById("divListado").className = "oculto";
-  document.getElementById("divModificarActividad").className = "oculto";
-  document.getElementById("divAcercaDe").className = "oculto";
+  document.getElementById("divInicio").classList.add("oculto");
+  document.getElementById("divRegistro").classList.add("oculto");
+  document.getElementById("divCrearActividad").classList.add("oculto");
+  document.getElementById("divListado").classList.add("oculto");
+  document.getElementById("divModificarActividad").classList.add("oculto");
+  document.getElementById("divAcercaDe").classList.add("oculto");
 
   if (nombre == "inicio") {
-    document.getElementById("divInicio").className = "visible";
+    document.getElementById("divInicio").classList.add("visible");
+    document.getElementById("divInicio").classList.remove("oculto");
   }
 
   if (nombre == "registro") {
-    document.getElementById("divRegistro").className = "visible";
+    document.getElementById("divRegistro").classList.add("visible");
+    document.getElementById("divRegistro").classList.remove("oculto");
   }
 
   if (nombre == "crear") {
-    document.getElementById("divCrearActividad").className = "visible";
+    document.getElementById("divCrearActividad").classList.add("visible");
+    document.getElementById("divCrearActividad").classList.remove("oculto");
   }
 
   if (nombre == "listado") {
-    document.getElementById("divListado").className = "visible";
+    document.getElementById("divListado").classList.add("visible");
+    document.getElementById("divListado").classList.remove("oculto");
   }
 
   if (nombre == "modificar") {
-    document.getElementById("divModificarActividad").className = "visible";
+    document.getElementById("divModificarActividad").classList.add("visible");
+    document.getElementById("divModificarActividad").classList.remove("oculto");
   }
 
   if (nombre == "acercade") {
-    document.getElementById("divAcercaDe").className = "visible";
+    document.getElementById("divAcercaDe").classList.add("visible");
+    document.getElementById("divAcercaDe").classList.remove("oculto");
   }
 }
 
@@ -131,7 +137,7 @@ function gestionarMenuAdmin(autenticado) {
     if (autenticado) {
       elemento.classList.remove("oculto");
       elemento.classList.add("visible");
-    }else{
+    } else {
       elemento.classList.add("oculto");
       elemento.classList.remove("visible");
     }
@@ -142,7 +148,7 @@ function gestionarMenuAdmin(autenticado) {
     if (autenticado) {
       elemento.classList.add("oculto");
       elemento.classList.remove("visible");
-    }else{
+    } else {
       elemento.classList.remove("oculto");
       elemento.classList.add("visible");
     }
@@ -159,7 +165,7 @@ function gestionarMenuUsuario(autenticado) {
   if (autenticado) {
     elemento.classList.remove("oculto");
     elemento.classList.add("visible");
-  }else{
+  } else {
     elemento.classList.add("oculto");
     elemento.classList.remove("visible");
   }
@@ -169,7 +175,7 @@ function gestionarMenuUsuario(autenticado) {
     if (autenticado) {
       elemento.classList.add("oculto");
       elemento.classList.remove("visible");
-    }else{
+    } else {
       elemento.classList.remove("oculto");
       elemento.classList.add("visible");
     }
@@ -180,7 +186,7 @@ function gestionarMenuUsuario(autenticado) {
     if (autenticado) {
       elemento.classList.add("oculto");
       elemento.classList.remove("visible");
-    }else{
+    } else {
       elemento.classList.remove("oculto");
       elemento.classList.add("visible");
     }
@@ -210,23 +216,4 @@ function mostrarError(mensaje) {
     error.classList.add("oculto");
     error.classList.remove("visible");
   }, 5000);
-}
-
-function actualizarlistado(){
-  const lista =document.getElementById("listaActividades");
-  lista.innerHTML = "";
-
-  actividades.forEach(function(actividad) {
-    let elemento = document.createElement("li");
-    elemento.textContent =
-    "Nombre: " + actividad["Nombre de la actividad"] +
-    "Provincia " + actividad["Provincia"] +
-    "Direccion " + actividad["Direccion"] +
-    "Fecha " + actividad["Fecha"] +
-    "Horario " + actividad["Horario"] +
-    "Descripcion " + actividad["Descripcion"];
-    lista.appendChild(elemento);
-
-  }
-);
 }
