@@ -211,3 +211,22 @@ function mostrarError(mensaje) {
     error.classList.remove("visible");
   }, 5000);
 }
+
+function actualizarlistado(){
+  const lista =document.getElementById("listaActividades");
+  lista.innerHTML = "";
+
+  actividades.forEach(function(actividad) {
+    let elemento = document.createElement("li");
+    elemento.textContent =
+    "Nombre: " + actividad["Nombre de la actividad"] +
+    "Provincia " + actividad["Provincia"] +
+    "Direccion " + actividad["Direccion"] +
+    "Fecha " + actividad["Fecha"] +
+    "Horario " + actividad["Horario"] +
+    "Descripcion " + actividad["Descripcion"];
+    lista.appendChild(elemento);
+
+  }
+);
+}
